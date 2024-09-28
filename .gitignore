@@ -1,0 +1,99 @@
+# .gitignore para Back-End e Front-End
+
+#############
+# Back-End  #
+#############
+
+# Compiled binary files (DLLs, EXEs)
+**/bin/
+**/obj/
+
+# User-specific files
+*.rsuser
+*.user
+*.lock.json
+*.suo
+*.sln.docstates
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider IDE files
+.idea/
+*.sln.iml
+
+# Build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.ilk
+*.lib
+*.nupkg
+*.exp
+*.dbmdl
+*.dbproj.schemaview
+
+# Entity Framework Migrations
+Migrations/
+
+# Config files
+appsettings.*.json
+launchSettings.json
+
+# Resharper
+_ReSharper*/
+*.DotSettings.user
+
+# DotNet CLI
+project.lock.json
+project.fragment.lock.json
+
+# Nuget packages
+*.nupkg
+**/packages/
+packages/
+
+# DotNet tools
+.toolsonfig
+
+##############
+# Front-End  #
+##############
+
+# Angular
+**/node_modules/
+**/dist/
+**/.angular/
+**/.vscode/
+
+# Compiled JavaScript
+*.js
+*.jsx
+*.js.map
+*.tsbuildinfo
+
+# Logs and debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Angular lock files
+package-lock.json
+yarn.lock
+
+# IDE files
+.idea/
+*.iml
+
+# Environment and configuration files
+*.env
+*.local
+
+# Coverage reports
+coverage/
+/Back-End/AddressSolution/.vs

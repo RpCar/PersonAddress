@@ -1,0 +1,37 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg rounded" style="width: 80%; max-width: 1200px;">
+  
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+            <th scope="col">Name</th>
+            <th scope="col">Street</th>
+            <th scope="col">City</th>
+            <th scope="col">State</th>
+            <th scope="col">Zip Code</th>
+            <th scope="col">Action</th>
+          </thead>
+          <tbody>
+            <tr *ngFor="let personAddress of personAddresses">
+              <td>{{ personAddress.name.firstName }}</td>
+              <td>{{ personAddress.address.street }}</td>
+              <td>{{ personAddress.address.city }}</td>
+              <td>{{ personAddress.address.state }}</td>
+              <td>{{ personAddress.address.zipCode }}</td>
+              <td>
+                <div class="btn-group ce" role="group" aria-label="Action buttons">
+                  <button type="button" class="btn btn-primary btn-sm"
+                    [routerLink]="['/update', personAddress.id]">Update</button>
+                  <button type="button" class="btn btn-primary btn-sm"
+                    [routerLink]="['/details', personAddress.id]">Details</button>
+                  <button type="button" class="btn btn-danger btn-sm" (click)="confirmDelete(personAddress.id)">Delete</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <button type="button" class="btn btn-primary" [routerLink]="['/create']">Create New Address</button>
+      </div>
+  
+    </div>
+  </div>

@@ -1,0 +1,17 @@
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg rounded" style="width: 80%; max-width: 1200px;">
+        <div class="container">
+            <form (ngSubmit)="createAddress(personAddressForm)" #personAddressForm="ngForm">
+                <app-person-address-form [personAddress]="personAddress" 
+                    ngModelGroup="addressGroup"
+                    [submitted]="personAddressForm.submitted"
+                    [readOnly]="false"></app-person-address-form>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <button type="button" class="btn btn-secondary" [routerLink]="['/addresses']">Back</button>
+                    <button type="submit" class="btn btn-primary">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

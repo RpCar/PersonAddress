@@ -1,0 +1,54 @@
+<div class="mb-3">
+    <label for="firstNameInput" class="form-label">First Name</label>
+    <input type="text" class="form-control" id="firstNameInput" aria-describedby="First Name"
+        [(ngModel)]="personAddress.name.firstName" name="firstName"
+        [ngClass]="{ 'is-invalid': submitted && firstNameInput.invalid }"
+        #firstNameInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
+<div class="mb-3">
+    <label for="lastNameInput" class="form-label">Last Name</label>
+    <input type="text" class="form-control" id="lastNameInput" aria-describedby="Last Name"
+        [(ngModel)]="personAddress.name.lastName" name="lastName"
+        [ngClass]="{ 'is-invalid': submitted && lastNameInput.invalid }"
+        #lastNameInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
+<div class="mb-3">
+    <label for="streetInput" class="form-label">Street</label>
+    <input type="text" class="form-control" id="streetInput" aria-describedby="Street"
+        [(ngModel)]="personAddress.address.street" name="street"
+        [ngClass]="{ 'is-invalid': submitted && streetInput.invalid }"
+        #streetInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
+<div class="mb-3">
+    <label for="cityInput" class="form-label">City</label>
+    <input type="text" class="form-control" id="cityInput" aria-describedby="City"
+        [(ngModel)]="personAddress.address.city" name="city"
+        [ngClass]="{ 'is-invalid': submitted && cityInput.invalid }"
+        #cityInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
+<div class="mb-3">
+    <label for="stateInput" class="form-label">State</label>
+    <input type="text" class="form-control" id="stateInput" aria-describedby="State"
+        [(ngModel)]="personAddress.address.state" name="state"
+        [ngClass]="{ 'is-invalid': submitted && stateInput.invalid }"
+        #stateInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
+<div class="mb-3">
+    <label for="zipCodeInput" class="form-label">Zip Code</label>
+    <input type="text" class="form-control" id="zipCodeInput" aria-describedby="Zip Code"
+        [(ngModel)]="personAddress.address.zipCode" name="zipCode"
+        [ngClass]="{ 'is-invalid': submitted && zipCodeInput.invalid }"
+        #zipCodeInput="ngModel"
+        [readonly]="readOnly"
+        [disabled]="readOnly" required>
+</div>
